@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00017953  00000000  00000000  00031998  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000dce4  00000000  00000000  000492eb  2**0
+ 17 .debug_line   0000dce2  00000000  00000000  000492eb  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0008859c  00000000  00000000  00056fcf  2**0
+ 18 .debug_str    0008859c  00000000  00000000  00056fcd  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000df56b  2**0
+ 19 .comment      00000053  00000000  00000000  000df569  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  0000331c  00000000  00000000  000df5c0  2**2
+ 20 .debug_frame  0000331c  00000000  00000000  000df5bc  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -863,7 +863,7 @@ unsigned char SCH_Delete_Task(uint32_t task_index){
 	}
 	else
 	{
-		// Return_code = RETURN_NORMAL;
+
 	}
 	SCH_tasks_G[task_index].pTask = 0x000;
  80005b2:	4916      	ldr	r1, [pc, #88]	; (800060c <SCH_Delete_Task+0x70>)

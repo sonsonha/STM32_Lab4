@@ -84,12 +84,11 @@ unsigned char SCH_Delete_Task(uint32_t task_index){
 	unsigned char Return_code = 0;
 	if (SCH_tasks_G[task_index].pTask == 0)
 	{
-		// Error_code_G = ERROR_SCH_CANNOT_DELETE_TASK;
-		// Return_code = RETURN_ERROR;
+
 	}
 	else
 	{
-		// Return_code = RETURN_NORMAL;
+
 	}
 	SCH_tasks_G[task_index].pTask = 0x000;
 	SCH_tasks_G[task_index].Delay = 0;
